@@ -1,8 +1,12 @@
 name: Spring Boot CI
 
 on:
-  push: [dev]
+  push: 
+    branches: [ main ]
   pull_request:
+    branches: [ main ]
+
+      workflow_dispatch:
 
 jobs:
   build:
@@ -19,3 +23,7 @@ jobs:
 
       - name: Build & Test
         run: ./gradlew build
+        
+      - name: Run Application
+        run: ./gradlew bootRun
+        
