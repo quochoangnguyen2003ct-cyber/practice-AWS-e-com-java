@@ -1,0 +1,12 @@
+Cách lauch 1 Instance:
+
+Step 1: setup Instance trên Console aws.
+- tạo 1 instance chọn EBS ( Hệ điều hành OS, Linux, v.v.. ) 
+- Tạo hoặc chọn keypair có sẵn
+- tạo hoặc chọn security groups
+- Sau khi launch 1 instance thì qua security setup inbound và outbound
+- connect instance bằng ssh 
+lệnh CLI mẫu : " ssh -i "laptop-hoang-kp.pem" ec2-user@ec2-54-82-42-215.compute-1.amazonaws.com "
+phải check vị trí trong file cmd có chứa keypair hay không, nếu ko phải đi về đúng vị trí mới chạy lệnh login
+
+Step 2.
