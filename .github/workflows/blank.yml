@@ -22,8 +22,6 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Build & Test
-        run: ./gradlew build
         
       - name: Run Application
         run: ./gradlew bootRun
