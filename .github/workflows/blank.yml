@@ -23,6 +23,6 @@ jobs:
           distribution: 'temurin'
 
         
-      - name: Run Application
-        run: ./gradlew bootRun
+      - name: Run a one-line script
+        run: echo Hello, world!
 
